@@ -167,29 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ba625c99d0ce7c46adbeb508ed25e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &182582588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 453084650579209855, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-  m_PrefabInstance: {fileID: 948085858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &296263955 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 937451010987979973, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
   m_PrefabInstance: {fileID: 948085858}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &296263962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182582588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ce58485e5b17341ad026a1dece57d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1687819085}
 --- !u!1 &461352869
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,10 +833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NestedParent_Unpack
       objectReference: {fileID: 0}
-    - target: {fileID: 7400677500434752734, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 8204767107045534001, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 1687819085}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
 --- !u!1 &1024271445
@@ -1326,11 +1308,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 10
   m_TargetDisplay: 0
---- !u!20 &1812258181 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 5126527961139664767, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-  m_PrefabInstance: {fileID: 948085858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1890620103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1398,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 1812258181}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -1501,10 +1478,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -5736373029162361594, guid: 79f49b9e39549a747ba541298a9d3b71, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 296263955}
     - target: {fileID: 9172533023373667360, guid: 79f49b9e39549a747ba541298a9d3b71, type: 3}
       propertyPath: m_Name
       value: Enemy
