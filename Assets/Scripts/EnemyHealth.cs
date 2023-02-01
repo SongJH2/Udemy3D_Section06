@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
         hitPoint -= damage;
         if(hitPoint<=0)
         {
-            gameObject.SetActive(false);
+            GetComponent<EnemyAI>().OnDead();
         }
     }
 }

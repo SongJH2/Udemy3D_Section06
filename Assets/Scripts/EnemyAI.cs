@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoke = false;
+    bool isDead = false;
 
     void Start()
     {
@@ -21,6 +22,12 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (isDead)
+        {
+            //enabled = false;
+            //navMeshAgent.enabled = false;
+        }
+
         distanceToTarget = Vector3.Distance(target.position, transform.position);
 
         if(isProvoke)
@@ -77,5 +84,17 @@ public class EnemyAI : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
+
+    public void OnDead()
+    {
+        if (isDead) return;
+
+        isDead = true;
+
+        enabled = false;
+        navMeshAgent.enabled = false;
+
+        GetComponent<Animator>().SetTrigger("die");
     }
 }
